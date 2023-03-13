@@ -24,10 +24,11 @@ The owner of the contract can pause/unpause it by calling `setPaused(bool val)` 
 
 These instructions will help you to compile, deploy and test the Crypto Devs contract in your local environment and the public blockchain.
 
-Prerequisites
-NodeJS
-Hardhat Framework
-Metamask
+## Prerequisites
+
+1. NodeJS
+2. Hardhat Framework
+3. Metamask
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
