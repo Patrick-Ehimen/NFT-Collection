@@ -35,16 +35,13 @@ Try running some of the following tasks:
 
 ## Cloning and Compiling with Hardhat
 
-1. Clone the repository from Github: `git clone https://github.com/CryptoDevs/CryptoDevs.git`
+1. Clone the repository from Github: `git clone https://github.com/Patrick-Ehimen/NFT-Collection.git`
 2. Install Hardhat: `npm install -g @nomiclabs/hardhat`
 3. Install dependencies: `npm install`
-4. Compile the contracts: `hardhat compile`
-5. Deploy the contracts to the Ethereum network: `hardhat deploy`
+4. Compile the contracts: `npx hardhat compile`
+5. Deploy the contracts to the Ethereum network: `npx hardhat run scripts/deploy.js --network mumbai`
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+Once deployed, you can interact with it using any Ethereum wallet or web3 provider.
+
+The owner of the contract can start a presale by calling `startPresale()`. During this period, whitelisted addresses can call `presaleMint()` to mint 1 NFT per transaction. After the presale has ended, users can call `mint()` to mint 1 NFT per transaction.
+The owner of the contract can pause/unpause it by calling `setPaused(bool val)` and withdraw Ether from it by calling `withdraw()`.
